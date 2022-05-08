@@ -14,7 +14,7 @@ function App() {
        <Header project={project} setProject={setProject} setState={setState} state={state}/>
       <Routes>
         <Route path="/" element={<Home  state={state}/>}/>
-        <Route path="/projects" element={<Projects  state={state}/>}/>
+        <Route path="/projects" element={<Projects setProject={setProject}  state={state}/>}/>
     </Routes>
     </div>
   );
